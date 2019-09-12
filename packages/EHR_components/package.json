@@ -1,0 +1,26 @@
+{
+  "name": "EHR_components",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "authors": {
+    "name": "js-spider",
+    "email": "455381391@qq.com"
+  },
+  "repository": "/EHR_components",
+  "scripts": {
+    "dev": "father doc dev",
+    "build": "father build"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "father": "^2.16.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-import": "^1.12.1"
+  }
+}

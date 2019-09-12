@@ -1,0 +1,45 @@
+---
+menu: Components
+name: perChart
+route: /components/swiper
+order: -1
+sidebar: true
+---
+
+import { Playground } from 'docz';
+import Per from './';
+
+# Button Component
+
+## Normal Button
+
+<Playground>
+    {()=>{
+        return (
+          <div>
+            <Per main={6} sub={12} width={80} mess={'未处理1'}></Per>
+            <Per main={6} sub={12} width={80} symbol strokeColor={'red'} mess={'未处理1'}></Per>
+            <Per main={6} sub={12} width={80} strokeColor={'green'} mess={'未处理1'}></Per>
+            <Per main={6} sub={12} width={120} symbol mess={'未处理1'}></Per>
+          </div>
+        )
+    }}
+</Playground>
+
+## Group
+
+<Playground>
+    {()=>{
+        const Group = Per.Group;
+        return (
+          <Group>
+            <Per main={6} sub={12} mess={'未处理1'}></Per>
+            <Per main={3} sub={12} symbol mess={'未处理1'}></Per>
+            <Per main={9} sub={12} mess={'未处理1'}></Per>
+            <Per main={0} sub={12} mess={'未处理1'}></Per>
+            <Per main={12} sub={12} symbol mess={'未处理1'}></Per>
+            <Per main={5} sub={12} mess={'未处理1'}></Per>
+          </Group>
+        )
+    }}
+</Playground>

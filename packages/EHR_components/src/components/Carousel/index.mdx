@@ -1,0 +1,31 @@
+---
+menu: Components
+name: carousel
+route: /components/carousel
+order: -1
+sidebar: true
+---
+
+import { Playground } from 'docz';
+import Carousel from './';
+
+# Button Component
+
+## Normal Button
+
+<Playground>
+  {()=>{
+    return (
+      <Carousel>
+        <div>
+          <div style={{flex:1}}>1</div>
+          <div style={{flex:1}}>1</div>
+          <div style={{flex:1}}>1</div>
+        </div>
+        <div><h3>2</h3></div>
+        <div><h3>3</h3></div>
+      </Carousel>
+    )
+  }}
+</Playground>
+
