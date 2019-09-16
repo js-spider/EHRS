@@ -1,0 +1,33 @@
+@keyframes isActive
+{
+  0% { height: 0%; opacity:0.4}
+  65% { height: 0%; opacity:1}
+  100% {height: 100%; opacity:0}
+}
+.EHRProgressVBar{
+  padding: 0px 6px;
+  height:200px;
+  display: inline-block;
+  .all{
+    height:100%;
+    width:10px;
+    border-radius: 5px;
+    background-color: #F3F3F3;
+    position: relative;
+    .active{
+      width:100%;
+      border-radius: 5px;
+      background-color: #01C8E6;
+      position: absolute;
+      bottom: 0px;
+      .isActive{
+        width:100%;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        animation: isActive 2.5s infinite;
+      }
+    }
+  }
+}

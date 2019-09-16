@@ -40,8 +40,8 @@ export default class EHRCarousel extends React.Component{
   }
   render() {
     const length = this.props.children.length;
-    const Childrens = React.Children.map(this.props.children, function(item,index){
-      return <li style={{width:`${100/length}%`}}>{item}</li>
+    const Childrens = React.Children.map(this.props.children, function(item){
+      return <li style={{width:length>0 ? `${100/length}%`: '100%'}}>{item}</li>
     })
     return (
       <div className={styles.EHRCarousel} >

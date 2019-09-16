@@ -1,0 +1,25 @@
+---
+menu: Components
+name: vertical_bar
+route: /components/verticalBar
+order: -1
+sidebar: true
+---
+
+import { Playground } from 'docz';
+import Bar from './';
+
+# Button Component
+
+## Normal Button
+
+<Playground>
+    {()=>{
+        return (
+          <div>
+            <Bar percent={45} status={'active'}></Bar>
+            <Bar percent={60} remaining={false}></Bar>
+          </div>
+        )
+    }}
+</Playground>

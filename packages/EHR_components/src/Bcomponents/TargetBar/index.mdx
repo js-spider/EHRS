@@ -1,0 +1,29 @@
+---
+menu: Bcomponents
+name: TargetBar
+route: /Bcomponents/TargetBar
+order: -1
+sidebar: true
+---
+
+import { Playground } from 'docz';
+import TargetBar from './';
+
+# Button Component
+
+## Normal Button
+
+<Playground>
+  {()=>{
+    return (
+      <div>
+         <TargetBar preset={40} target={60} presetColor={'#FFE2A9'} targetColor={'#FDA702'} mess={'目标1'}></TargetBar>
+         <TargetBar preset={40} target={60} presetColor={'#B6CEFF'} targetColor={'#5588F2'} mess={'目标2'}></TargetBar>
+         <TargetBar preset={40} target={60} mess={'目标3'}></TargetBar>
+         <TargetBar preset={40} target={60} mess={'目标4'}></TargetBar>
+      </div>
+
+    )
+  }}
+</Playground>
+

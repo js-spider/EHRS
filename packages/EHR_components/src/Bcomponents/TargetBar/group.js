@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.less';
 
-export default class EHRProgressPerGroup extends React.Component {
+export default class TargetBarGroup extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -9,7 +9,7 @@ export default class EHRProgressPerGroup extends React.Component {
 
   render(){
     return (
-      <div className={`${styles.EHRProgressPerGroup} ${styles.flexGroup}` }>
+      <div className={`${styles.TargetBarGroup} ${styles.flexGroup}` }>
         {this.props.children}
       </div>
     )
