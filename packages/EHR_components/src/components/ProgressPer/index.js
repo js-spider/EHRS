@@ -1,6 +1,6 @@
 import React from 'react';
 import { Progress } from 'antd';
-import Group from './group';
+import { FlexAround } from '../Layout';
 
 import styles from './index.less';
 
@@ -46,4 +46,4 @@ export default class EHRProgressPer extends React.Component {
   }
 }
 
-EHRProgressPer.Group = Group;
+EHRProgressPer.Group = FlexAround;

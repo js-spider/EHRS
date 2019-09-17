@@ -1,6 +1,6 @@
 import React from 'react';
 import Components from "../../components";
-import EHRTargetBar from '../TargetBar'
+import EHRTargetBar from '../../components/TargetBar'
 
 import styles from './index.less';
 

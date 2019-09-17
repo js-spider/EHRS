@@ -1,6 +1,6 @@
 import React from 'react';
-import Components from '../../components';
-import Group from './group'
+import Components from '../index';
+import { FlexAround } from '../Layout';
 import styles from './index.less';
 
 const { EHRProgressVBar } = Components;
@@ -27,4 +27,4 @@ export default class TargetBar extends React.Component {
     )
   }
 }
-TargetBar.Group = Group;
+TargetBar.Group = FlexAround;

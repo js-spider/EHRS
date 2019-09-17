@@ -13,9 +13,10 @@ export default class WarningPer extends React.Component {
   }
 
   render(){
-    const { itemWidth=80 } = this.props;
+    const { itemWidth=80,width,height,style } = this.props;
+    const styleProps = {width,height,...style}
     return (
-      <div className={styles.WarningPer}>
+      <div className={styles.WarningPer} style={styleProps}>
         <GroupPer>
           <EHRPer main={6} sub={12} width={itemWidth} symbol strokeColor={'BE52BD'} mess={'未处理'}></EHRPer>
           <EHRPer main={3} sub={12} width={itemWidth} symbol strokeColor={'5588F2'} mess={'整改中'}></EHRPer>
