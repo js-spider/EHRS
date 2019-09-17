@@ -1,5 +1,5 @@
 import React from 'react';
-import { Components } from '../../index';
+import Components from '../../components';
 import Group from './group'
 import styles from './index.less';
 

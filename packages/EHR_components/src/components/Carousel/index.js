@@ -39,16 +39,18 @@ export default class EHRCarousel extends React.Component{
     ulNode.style.left = `${-(currentChild*100)}%`;
   }
   render() {
+    const {height='100%',width='100%'} = this.props;
     const length = this.props.children.length;
-    const Childrens = React.Children.map(this.props.children, function(item){
+    const children = React.Children.map(this.props.children, function(item){
       return <li style={{width:length>0 ? `${100/length}%`: '100%'}}>{item}</li>
     })
+    const style = {height,width}
     return (
-      <div className={styles.EHRCarousel} >
+      <div className={styles.EHRCarousel} style={style}>
         <div className={styles.arrowWrapper}><Icon type="left" onClick={this.prev} /></div>
         <div className={styles.content} >
           <ul id={'carousel-ul'} style={{width:`${100 * length}%`}}>
-            {Childrens}
+            {children}
           </ul>
         </div>
         <div className={styles.arrowWrapper}><Icon type="right" onClick={this.next}/></div>

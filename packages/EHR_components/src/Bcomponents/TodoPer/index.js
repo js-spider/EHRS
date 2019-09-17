@@ -1,7 +1,7 @@
 import React from 'react';
-import { Components } from '../../index';
+import Components from '../../components';
 
-import styles from './index.less';
+// import styles from './index.less';
 
 const { EHRPer, EHRCarousel } = Components;
 const GroupPer = EHRPer.Group;
@@ -13,9 +13,10 @@ export default class WarningPer extends React.Component {
   }
 
   render(){
-    const { itemWidth=50 } = this.props;
+    const { itemWidth=50,style,height,width } = this.props;
+    const styleProps = {height,width,...style};
     return (
-      <div className={styles.WarningPer}>
+      <div style={styleProps}>
         <EHRCarousel>
           <div>
             <GroupPer>
@@ -40,7 +41,6 @@ export default class WarningPer extends React.Component {
             </GroupPer>
           </div>
         </EHRCarousel>
-
       </div>
     )
   }
